@@ -60,6 +60,15 @@
         </a>
 
       </div>
+      <script>
+  const loggedInPastorId = 1; // Simulate logged-in pastor
+  const shepherdCards = document.querySelectorAll('.member-card');
+
+  shepherdCards.forEach(card => {
+    const pastorId = parseInt(card.dataset.pastor);
+    if (pastorId !== loggedInPastorId) card.style.display = 'none';
+  });
+</script>
 
     </section>
   </div>
