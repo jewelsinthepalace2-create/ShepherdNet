@@ -1,0 +1,64 @@
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.add-btn {
+  background: #1f2d3d;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #32465a;
+}
+
+/* GRID */
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+}
+
+/* CARD */
+.member-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-4px);
+}
+
+.member-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 0.7rem;
+}
+
+.member-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.member-card p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ACTIVE LINK */
+.menu a.active {
+  background: #32465a;
+}
