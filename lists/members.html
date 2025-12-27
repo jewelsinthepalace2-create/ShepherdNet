@@ -67,6 +67,15 @@
         </a>
 
       </div>
+      <script>
+  const loggedInShepherdId = 1; // Simulate logged-in shepherd
+  const memberCards = document.querySelectorAll('.member-card');
+
+  memberCards.forEach(card => {
+    const shepherdId = parseInt(card.dataset.shepherd);
+    if (shepherdId !== loggedInShepherdId) card.style.display = 'none';
+  });
+</script>
 
     </section>
   </div>
