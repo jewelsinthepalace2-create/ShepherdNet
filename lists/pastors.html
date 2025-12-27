@@ -61,6 +61,15 @@
         </a>
 
       </div>
+      <script>
+  const loggedInChapelId = 1; // Simulate chapel leader
+  const pastorCards = document.querySelectorAll('.member-card');
+
+  pastorCards.forEach(card => {
+    const chapelId = parseInt(card.dataset.chapel);
+    if (chapelId !== loggedInChapelId) card.style.display = 'none';
+  });
+</script>
 
     </section>
   </div>
