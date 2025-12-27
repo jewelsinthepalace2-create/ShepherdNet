@@ -69,6 +69,16 @@
         </a>
 
       </div>
+      <script>
+  const loggedInMasterId = 1; // Simulate master admin
+  const chapelCards = document.querySelectorAll('.member-card');
+
+  chapelCards.forEach(card => {
+    const masterId = parseInt(card.dataset.master);
+    if (masterId !== loggedInMasterId) card.style.display = 'none';
+  });
+</script>
+      
 
     </section>
   </div>
