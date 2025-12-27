@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Member Profile | ShepherdNet</title>
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="logo">ShepherdNet</h2>
+
+    <nav class="menu shepherd">
+      <p class="menu-title">Shepherd</p>
+      <a href="../dashboard.html">Dashboard</a>
+      <a href="../lists/members.html">My Members</a>
+      <a href="#">Attendance</a>
+      <a href="#">Soul Records</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div>
+        <h3>Member Profile</h3>
+        <small>Details and growth tracking</small>
+      </div>
+
+      <div class="user-info">
+        <span>John Mensah</span>
+        <small>Shepherd</small>
+      </div>
+    </header>
+
+    <!-- PROFILE CONTENT -->
+    <section class="profile-content">
+
+      <!-- PROFILE HEADER -->
+      <div class="profile-header">
+        <img src="../assets/images/user.png" alt="Profile Picture">
+        <div class="profile-info">
+          <h2>Sarah Owusu</h2>
+          <p>Cell Member · Chapel A</p>
+          <p>Hostel: A · Level: 200 · Course: Theology</p>
+        </div>
+      </div>
+
+      <!-- TABS -->
+      <div class="profile-tabs">
+        <button class="tab active" data-tab="soul">Soul Record</button>
+        <button class="tab" data-tab="attendance">Attendance</button>
+        <button class="tab" data-tab="performance">Soul Performance</button>
+      </div>
+
+      <!-- TAB CONTENT -->
+      <div class="tab-content">
+
+        <!-- SOUL RECORD -->
+        <div class="tab-panel" id="soul">
+          <h3>Soul Record</h3>
+          <p>Salvation Status: Saved</p>
+          <p>Date Joined: 01 Jan 2025</p>
+          <p>Discipleship Stage: Stage 2</p>
+          <p>Follow-up Notes:</p>
+          <ul>
+            <li>Attended Bible Study regularly</li>
+            <li>Participated in outreach</li>
+          </ul>
+        </div>
+
+        <!-- ATTENDANCE -->
+        <div class="tab-panel" id="attendance" style="display:none;">
+          <h3>Attendance</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Remarks</th>
+            </tr>
+            <tr>
+              <td>2025-12-21</td>
+              <td>Present</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>2025-12-14</td>
+              <td>Absent</td>
+              <td>Sick</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- SOUL PERFORMANCE -->
+        <div class="tab-panel" id="performance" style="display:none;">
+          <h3>Soul Performance</h3>
+          <ul>
+            <li>Participation: Excellent</li>
+            <li>Discipleship Growth: Stage 2 → Stage 3</li>
+            <li>Leadership Potential: High</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
